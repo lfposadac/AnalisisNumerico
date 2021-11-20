@@ -55,24 +55,24 @@ while True:
                     respuesta = np.argmax(resultado)
                     if respuesta == 0:
                         print(vector, resultado, respuesta)
-                        cv2.rectangle(frame,(x1, y1), (x2,y2), (0, 255, 0), 3)
+                        cv2.rectangle(frame,(x1, y1), (x2,y2), (10, 40, 160), 3)
                         cv2.putText(frame, '{}'.format(dire_img[0]), (x1, y1 - 5), 1, 1.3, (0, 255, 0), 1, cv2.LINE_AA)
                     elif respuesta == 1:
                         print(vector, resultado, respuesta)
-                        cv2.rectangle(frame, (x1, y1), ( x2, y2), (0, 0, 255), 3)
-                        cv2.putText(frame, '{}'.format(dire_img[1]), (x1, y1 - 5), 1, 1.3, (0, 0, 255), 1, cv2.LINE_AA)
+                        cv2.rectangle(frame, (x1, y1), ( x2, y2), (210, 200, 40), 3)
+                        cv2.putText(frame, '{}'.format(dire_img[1]), (x1, y1 - 5), 1, 1.3, (0, 255, 0), 1, cv2.LINE_AA)
                     elif respuesta == 2:
                         print(vector, resultado, respuesta)
-                        cv2.rectangle(frame, (x1, y1), ( x2, y2), (0, 0, 255), 3)
-                        cv2.putText(frame, '{}'.format(dire_img[2]), (x1, y1 - 5), 1, 1.3, (0, 0, 255), 1, cv2.LINE_AA)
+                        cv2.rectangle(frame, (x1, y1), ( x2, y2), (130, 0, 80), 3)
+                        cv2.putText(frame, '{}'.format(dire_img[2]), (x1, y1 - 5), 1, 1.3, (0, 255, 0), 1, cv2.LINE_AA)
                     elif respuesta == 3:
                         print(vector, resultado, respuesta)
-                        cv2.rectangle(frame, (x1, y1), ( x2, y2), (0, 0, 255), 3)
-                        cv2.putText(frame, '{}'.format(dire_img[3]), (x1, y1 - 5), 1, 1.3, (0, 0, 255), 1, cv2.LINE_AA)
+                        cv2.rectangle(frame, (x1, y1), ( x2, y2), (89, 40, 25), 3)
+                        cv2.putText(frame, '{}'.format(dire_img[3]), (x1, y1 - 5), 1, 1.3, (0, 255, 0), 1, cv2.LINE_AA)
                     elif respuesta == 4:
                         print(vector, resultado, respuesta)
-                        cv2.rectangle(frame, (x1, y1), ( x2, y2), (0, 0, 255), 3)
-                        cv2.putText(frame, '{}'.format(dire_img[4]), (x1, y1 - 5), 1, 1.3, (0, 0, 255), 1, cv2.LINE_AA)
+                        cv2.rectangle(frame, (x1, y1), ( x2, y2), (255, 50, 255), 3)
+                        cv2.putText(frame, '{}'.format(dire_img[4]), (x1, y1 - 5), 1, 1.3, (0, 255, 0), 1, cv2.LINE_AA)
                     else:
                         cv2.putText(frame, 'Desconocido', (x1, y1 - 5), 1, 1.3, (0, 0, 255), 1, cv2.LINE_AA)
     cv2.imshow("Video", frame)
